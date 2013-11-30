@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["0x21hate@gmail.com"]
   s.homepage    = "https://github.com/m0h3n/rails-pdate"
   s.summary     = "persian date support for ruby on rails."
-  s.description = "A free and open source plugin for ruby and rails for support persian (Shamsi) date and time"
+  s.description = "A free and open source plugin for ruby and rails framework to support persian (Shamsi) date and time"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
