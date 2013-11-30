@@ -2,9 +2,6 @@
 
 class Pconvertor
 
-  attr_accessor :year, :month, :day, :hour, :min, :sec
-  attr_reader :g_year, :g_month, :g_day
-
   def gregorian_to_persian(year, month, day) # :nodoc:
     jj=0
     gy = year - 1600
