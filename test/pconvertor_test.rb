@@ -38,5 +38,4 @@ class PconvertorTest < ActiveSupport::TestCase
   test "sample persian to gregorian date 4" do
     assert_equal Pconvertor.new.persian_to_gregorian(1392, 1, 30), [2013, 4, 19]
   end
-
 end
