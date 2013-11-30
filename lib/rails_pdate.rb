@@ -1,0 +1,2 @@
+module RailsPdate
+end
