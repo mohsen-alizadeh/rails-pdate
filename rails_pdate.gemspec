@@ -7,11 +7,11 @@ require "rails_pdate/version"
 Gem::Specification.new do |s|
   s.name        = "rails_pdate"
   s.version     = RailsPdate::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of RailsPdate."
-  s.description = "TODO: Description of RailsPdate."
+  s.authors     = ["Mohsen Alizadeh"]
+  s.email       = ["0x21hate@gmail.com"]
+  s.homepage    = "https://github.com/m0h3n/rails-pdate"
+  s.summary     = "persian date support for ruby on rails."
+  s.description = "A free and open source plugin for ruby and rails for support persian (Shamsi) date and time"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
