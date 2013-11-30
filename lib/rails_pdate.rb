@@ -8,6 +8,7 @@ end
 require 'core_date'
 require 'rails_pdate/pconvertor'
 require 'rails_pdate/constants'
+require 'rails_pdate/p_date'
 
 
 
