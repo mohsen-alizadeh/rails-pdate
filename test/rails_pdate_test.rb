@@ -40,4 +40,7 @@ class RailsPdateTest < ActiveSupport::TestCase
     assert_equal PDate.new(1392, 1, 30).to_date.to_s, "2013-04-19"
   end
 
+  test "strftime format %C" do
+    assert_equal PDate.new(1392, 1, 30).strftime("%C"), "13"
+  end
 end
