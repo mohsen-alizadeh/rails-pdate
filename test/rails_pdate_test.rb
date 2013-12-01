@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 require 'test_helper'
 
 class RailsPdateTest < ActiveSupport::TestCase
@@ -50,5 +52,9 @@ class RailsPdateTest < ActiveSupport::TestCase
 
   test "strftime format %B" do
     assert_equal PDate.new(1392, 1, 30).strftime("%B"), "Farvardin"
+  end
+
+  test "strftime format %b" do
+    assert_equal PDate.new(1392, 1, 30).strftime("%b"), "فروردین"
   end
 end

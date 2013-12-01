@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 # :title:PDate (Persian Date) #
 class PDate
 
@@ -86,6 +88,7 @@ class PDate
       .gsub('%C', '%d' % (@year / 100) )
       .gsub('%y', '%d' % (@year % 100) )
       .gsub('%B', '%s' %  PERSIAN_MONTH_NAMES_PINGLISH[@month])
+      .gsub('%b', '%s' %  PERSIAN_MONTH_NAMES[@month])
 
 
   end
