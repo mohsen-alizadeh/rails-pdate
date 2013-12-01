@@ -47,4 +47,8 @@ class RailsPdateTest < ActiveSupport::TestCase
   test "strftime format %y" do
     assert_equal PDate.new(1392, 1, 30).strftime("%y"), "92"
   end
+
+  test "strftime format %B" do
+    assert_equal PDate.new(1392, 1, 30).strftime("%B"), "Farvardin"
+  end
 end

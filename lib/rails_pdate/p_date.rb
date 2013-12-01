@@ -1,5 +1,3 @@
-require 'date'
-
 # :title:PDate (Persian Date) #
 class PDate
 
@@ -80,11 +78,15 @@ class PDate
   end
 
   def strftime(format)
+
     format
       .gsub('%Y', '%d' % @year)
       .gsub('%m', '%02d' % @month)
       .gsub('%d', '%02d' % @day)
       .gsub('%C', '%d' % (@year / 100) )
       .gsub('%y', '%d' % (@year % 100) )
+      .gsub('%B', '%s' %  PERSIAN_MONTH_NAMES_PINGLISH[@month])
+
+
   end
 end
