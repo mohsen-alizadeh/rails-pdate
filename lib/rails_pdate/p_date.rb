@@ -85,5 +85,6 @@ class PDate
       .gsub('%m', '%02d' % @month)
       .gsub('%d', '%02d' % @day)
       .gsub('%C', '%d' % (@year / 100) )
+      .gsub('%y', '%d' % (@year % 100) )
   end
 end
