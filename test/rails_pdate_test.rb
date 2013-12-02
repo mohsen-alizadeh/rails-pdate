@@ -61,4 +61,8 @@ class RailsPdateTest < ActiveSupport::TestCase
   test "strftime format %e" do
     assert_equal PDate.new(1368, 11, 9).strftime("%e"), "9"
   end
+
+  test "to_formatted_s method" do
+    assert_equal PDate.new(1368, 11, 9).to_s, "1368-11-09"
+  end
 end

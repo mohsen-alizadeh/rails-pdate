@@ -79,6 +79,10 @@ class PDate
     in_time_zone.xmlschema
   end
 
+  def to_formatted_s
+    strftime(DATE_FORMATS[:default])
+  end
+
   def strftime(format)
 
     format
