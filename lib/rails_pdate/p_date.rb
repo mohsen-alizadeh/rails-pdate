@@ -96,4 +96,11 @@ class PDate
       .gsub('%e', '%d' % @day)
 
   end
+
+  def ==(other)
+    return true if to_s == other.to_s
+    false
+  end
+
+
 end

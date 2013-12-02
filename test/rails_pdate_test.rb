@@ -65,4 +65,12 @@ class RailsPdateTest < ActiveSupport::TestCase
   test "to_formatted_s method" do
     assert_equal PDate.new(1368, 11, 9).to_s, "1368-11-09"
   end
+
+  test "comparison two similar pdate" do
+    assert_equal PDate.new(1368, 11, 9), PDate.new(1368, 11, 9)
+  end
+
+  test "comparison two unsimilar pdate" do
+    assert_not_equal PDate.new(1368, 10, 9), PDate.new(1368, 11, 9)
+  end
 end
