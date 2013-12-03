@@ -102,5 +102,9 @@ class PDate
     false
   end
 
+  def clone
+    PDate.new(@year, @month, @day)
+  end
+
 
 end

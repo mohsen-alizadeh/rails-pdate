@@ -73,4 +73,14 @@ class RailsPdateTest < ActiveSupport::TestCase
   test "comparison two unsimilar pdate" do
     assert_not_equal PDate.new(1368, 10, 9), PDate.new(1368, 11, 9)
   end
+
+  test "comparison pdate with it`s cloned instance" do
+    date = PDate.new(1368, 11, 9)
+    assert_equal date, date.clone
+  end
+
+  test "check object id of cloned instance" do
+    date = PDate.new(1368, 11, 9)
+    assert_not_equal date.object_id, date.clone.object_id
+  end
 end
