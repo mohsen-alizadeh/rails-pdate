@@ -62,10 +62,6 @@ class PDate
   alias_method :default_inspect, :inspect
   alias_method :inspect, :readable_inspect
 
-  def xmlschema
-    in_time_zone.xmlschema
-  end
-
   def to_formatted_s
     strftime(DATE_FORMATS[:default])
   end
