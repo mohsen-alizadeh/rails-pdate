@@ -62,19 +62,6 @@ class PDate
   alias_method :default_inspect, :inspect
   alias_method :inspect, :readable_inspect
 
-  # Converts a Date instance to a Time, where the time is set to the beginning of the day.
-  # The timezone can be either :local or :utc (default :local).
-  #
-  #   date = Date.new(2007, 11, 10)  # => Sat, 10 Nov 2007
-  #
-  #   date.to_time                   # => Sat Nov 10 00:00:00 0800 2007
-  #   date.to_time(:local)           # => Sat Nov 10 00:00:00 0800 2007
-  #
-  #   date.to_time(:utc)             # => Sat Nov 10 00:00:00 UTC 2007
-  def to_time(form = :local)
-    ::Time.send(form, year, month, day)
-  end
-
   def xmlschema
     in_time_zone.xmlschema
   end
