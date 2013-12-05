@@ -83,4 +83,9 @@ class RailsPdateTest < ActiveSupport::TestCase
     date = PDate.new(1368, 11, 9)
     assert_not_equal date.object_id, date.clone.object_id
   end
+
+  test "check to_a method" do
+    assert_equal  PDate.new(1368, 11, 9).to_a, [1368, 11, 9]
+  end
+
 end

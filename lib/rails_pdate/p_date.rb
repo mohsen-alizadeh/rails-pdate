@@ -89,5 +89,8 @@ class PDate
     PDate.new(@year, @month, @day)
   end
 
+  def to_a
+    [@year, @month, @day]
+  end
 
 end
