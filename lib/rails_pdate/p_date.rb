@@ -52,6 +52,7 @@ class PDate
       to_default_s
     end
   end
+
   alias_method :to_default_s, :to_s
   alias_method :to_s, :to_formatted_s
 
@@ -91,6 +92,10 @@ class PDate
 
   def to_a
     [@year, @month, @day]
+  end
+
+  def inspect
+    to_s
   end
 
 end
