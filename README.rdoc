@@ -5,10 +5,13 @@ rails_pdate  is very simple and easy gem library that can used in rails applicat
 rails_pdate gem has written in rails 4.0.0 but maybe work in previous versions of rails
 
 == install
-put rails_pdate in Gemfile like this
+* put rails_pdate in Gemfile like this
 
-  gem 'rails_pdate'
+    gem 'rails_pdate'
 
+* run bunle install
+
+    bundle install
 
 
 == Examples
