@@ -1,3 +1,51 @@
 = RailsPdate
 
-This project rocks and uses MIT-LICENSE.
+rails_pdate  is very simple and easy gem library that can used in rails application.
+
+rails_pdate gem has written in rails 4.0.0 but maybe work in previous versions of rails
+
+== install
+put rails_pdate in Gemfile like this
+
+  gem 'rails_pdate'
+
+
+
+== Examples
+
+* parse string to PDate object
+
+
+
+    "1368-11-09".to_pdate   # => 1368-11-09
+    
+    "1368/11/09".to_pdate   # => 1368-11-09 
+    
+    "1368/11/09".to_pdate.class   # => PDate
+
+
+* convert Date object to PDate object ( Convert from gregorian to persian )
+
+    Date.today.to_pdate # => 1392-09-23
+    
+    Date.new(1990, 1, 29).to_pdate  # => 1368-11-09
+
+* convert PDate object to Date object ( convert from persian to gregorian )
+
+    PDate.new(1367, 8, 29).to_date  # => Sun, 20 Nov 1988 
+    PDate.new(1367, 8, 29).to_date.class    # => Date
+
+
+* convert PDate object to formatted string
+
+    PDate.new(1368, 11, 9).strftime("%Y %m %d") # => "1368 11 09"
+    # '%Y' => year
+    # '%m' => zero padding two digit month
+    # '%d' => zero padding two digit day 
+    # '%C' => year / 100
+    # '%y' => year % 100
+    # '%B' => persian month name in finglish
+    # '%b' => persian month name
+    # '%e' => day
+
+    
