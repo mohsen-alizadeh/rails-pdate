@@ -3,6 +3,8 @@
 # :title:PDate (Persian Date) #
 class PDate
 
+  attr_accessor :year, :month, :day, :hour, :min, :sec
+
   DATE_FORMATS = {
       :short        => '%e %b',
       :long         => '%B %e, %Y',
@@ -78,7 +80,7 @@ class PDate
       .gsub('%B', '%s' %  PERSIAN_MONTH_NAMES_PINGLISH[@month])
       .gsub('%b', '%s' %  PERSIAN_MONTH_NAMES[@month])
       .gsub('%e', '%d' % @day)
-
+      .gsub('%A', '%s' % PERSIAN_WEEKDAY_NAMES[self.cwday-1])
   end
 
   def ==(other)
@@ -98,4 +100,37 @@ class PDate
     to_s
   end
 
+
+
+  # day of calendar week (1-7, Shanbe is 1).
+  def cwday
+    cwday = to_date.cwday + 2
+    cwday -= 7 if cwday > 7
+    cwday
+  end
+
+  # get day of year ( 1 - 365 )
+  def yday
+    day_of_year = 0
+
+    (1..(@month-1)).to_a.each do |month|
+      day_of_year += PDaysInMonth[month-1]
+    end
+
+    day_of_year += day
+
+    day_of_year
+  end
+
+  def pdayname
+    PERSIAN_WEEKDAY_NAMES[self.cwday-1]
+  end
+
+  def +(other)
+    ( to_date + other ).to_pdate
+  end
+
+  def -(other)
+    ( to_date - other ).to_pdate
+  end
 end

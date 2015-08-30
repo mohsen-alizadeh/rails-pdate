@@ -62,6 +62,10 @@ class RailsPdateTest < ActiveSupport::TestCase
     assert_equal PDate.new(1368, 11, 9).strftime("%e"), "9"
   end
 
+  test "strftime format %A" do
+    assert_equal PDate.new(1394, 1, 1).strftime("%A"), "شنبه"
+  end
+
   test "to_formatted_s method" do
     assert_equal PDate.new(1368, 11, 9).to_s, "1368-11-09"
   end
@@ -91,5 +95,23 @@ class RailsPdateTest < ActiveSupport::TestCase
   test "inspect method of PDate" do
     assert_equal PDate.new(1368, 11, 9).inspect, "1368-11-09"
   end
+
+  test "get day of year" do
+    assert_equal PDate.new(1394, 1, 1).yday, 1
+    assert_equal PDate.new(1394, 2, 1).yday, 32
+    assert_equal PDate.new(1377, 3, 4).yday, 66
+    assert_equal PDate.new(1368, 11, 9).yday, 315
+  end
+
+  test "get cwday" do
+    assert_equal PDate.new(1394, 1, 1).cwday, 1
+    assert_equal PDate.new(1394, 1, 2).cwday, 2
+    assert_equal PDate.new(1394, 1, 3).cwday, 3
+    assert_equal PDate.new(1394, 1, 4).cwday, 4
+    assert_equal PDate.new(1394, 1, 5).cwday, 5
+    assert_equal PDate.new(1394, 1, 6).cwday, 6
+    assert_equal PDate.new(1394, 1, 7).cwday, 7
+  end
+
 
 end

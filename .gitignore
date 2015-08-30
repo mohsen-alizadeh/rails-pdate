@@ -9,3 +9,6 @@ test/dummy/.sass-cache
 
 # Ignore RubyMine IDE files
 .idea/
+
+Gemfile.lock
+
