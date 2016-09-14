@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.name        = "rails_pdate"
   s.version     = RailsPdate::VERSION
   s.authors     = ["Mohsen Alizadeh"]
-  s.email       = ["0x21hate@gmail.com"]
+  s.email       = ["mohsen@alizadeh.us"]
   s.homepage    = "https://github.com/mohsen-alizadeh/rails-pdate"
   s.summary     = "persian date support for ruby on rails."
   s.description = "persian date support for ruby on rails."
@@ -17,5 +17,4 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", ">= 4.0.0"
-  # add_runtime_dependency 'rails', '~> 4.0', '>= 4.0.0'
 end
