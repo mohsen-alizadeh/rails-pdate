@@ -113,5 +113,11 @@ class RailsPdateTest < ActiveSupport::TestCase
     assert_equal PDate.new(1394, 1, 7).cwday, 7
   end
 
-
+  test "get cweek" do
+    assert_equal PDate.new(1394, 1, 1).cweek, 1
+    assert_equal PDate.new(1394, 1, 7).cweek, 1
+    assert_equal PDate.new(1394, 1, 8).cweek, 2
+    assert_equal PDate.new(1394, 2, 1).cweek, 5
+    assert_equal PDate.new(1394, 12, 29).cweek, 53
+  end
 end

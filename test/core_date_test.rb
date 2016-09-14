@@ -5,6 +5,7 @@ class CoreDateTest < ActiveSupport::TestCase
 
   test "date to pdate" do
     assert_equal Date.today.to_pdate.class, PDate
+    assert_equal DateTime.now.to_pdate.class, PDate
   end
 
   test "date to pdate 1" do

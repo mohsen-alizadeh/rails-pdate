@@ -9,14 +9,13 @@ Gem::Specification.new do |s|
   s.version     = RailsPdate::VERSION
   s.authors     = ["Mohsen Alizadeh"]
   s.email       = ["0x21hate@gmail.com"]
-  s.homepage    = "https://github.com/m0h3n/rails-pdate"
+  s.homepage    = "https://github.com/mohsen-alizadeh/rails-pdate"
   s.summary     = "persian date support for ruby on rails."
-  s.description = "A free and open source plugin for ruby and rails framework to support persian (Shamsi) date and time"
+  s.description = "persian date support for ruby on rails."
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", ">= 4.0.0"
-
-  s.add_development_dependency "sqlite3"
+  # add_runtime_dependency 'rails', '~> 4.0', '>= 4.0.0'
 end

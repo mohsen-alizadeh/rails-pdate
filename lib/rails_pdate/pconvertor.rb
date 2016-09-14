@@ -2,6 +2,8 @@
 
 class Pconvertor
 
+  include RailsPdate::Constants
+
   def gregorian_to_persian(year, month, day) # :nodoc:
     jj=0
     gy = year - 1600
