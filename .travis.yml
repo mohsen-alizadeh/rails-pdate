@@ -20,3 +20,5 @@ matrix:
 before_install: gem update --remote bundler
 install:
   - bundle install --retry=3
+notifications:
+  slack: titreno:Twc0WXpO0ZuXsUmEWzJN8HPE
