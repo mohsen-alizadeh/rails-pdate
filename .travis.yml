@@ -7,7 +7,6 @@ rvm:
   - 2.2
   - 2.3.0
   - ruby-head
-  - jruby-9.0.1.0
   - rbx-3
 env:
   # this doesn't do anything for MRI or RBX, but it doesn't hurt them either
