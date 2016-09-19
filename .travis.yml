@@ -1,0 +1,23 @@
+sudo: false
+cache: bundler
+language: ruby
+rvm:
+  - 2.0.0
+  - 2.1
+  - 2.2
+  - 2.3.0
+  - ruby-head
+  - jruby-9.0.1.0
+  - rbx-3
+env:
+  # this doesn't do anything for MRI or RBX, but it doesn't hurt them either
+  # for JRuby, it enables us to get more accurate coverage data
+  - JRUBY_OPTS="--debug"
+matrix:
+  allow_failures:
+    - rvm: ruby-head
+    - rvm: rbx-3
+  fast_finish: true
+before_install: gem update --remote bundler
+install:
+  - bundle install --retry=3
