@@ -8,6 +8,7 @@ rails_pdate gem has written in rails 4.0.0 but maybe work in previous versions o
 
 {<img src="https://codeclimate.com/github/mohsen-alizadeh/rails-pdate/badges/gpa.svg" />}[https://codeclimate.com/github/mohsen-alizadeh/rails-pdate]
 {<img src="https://travis-ci.org/mohsen-alizadeh/rails-pdate.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/mohsen-alizadeh/rails-pdate]
+{<img src="https://codeclimate.com/github/mohsen-alizadeh/rails-pdate/badges/coverage.svg" />}[https://codeclimate.com/github/mohsen-alizadeh/rails-pdate/coverage]
 
 == install
 * put rails_pdate in Gemfile like this
