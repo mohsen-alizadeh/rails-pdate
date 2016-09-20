@@ -89,7 +89,7 @@ class RailsPdateTest < ActiveSupport::TestCase
   end
 
   test "check to_a method" do
-    assert_equal  PDate.new(1368, 11, 9).to_a, [1368, 11, 9]
+    assert_equal PDate.new(1368, 11, 9).to_a, [1368, 11, 9]
   end
 
   test "inspect method of PDate" do
