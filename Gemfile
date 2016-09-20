@@ -14,3 +14,4 @@ gemspec
 # gem 'debugger'
 gem 'rdoc'
 gem 'sqlite3'
+gem 'codeclimate-test-reporter', group: :test, require: nil
