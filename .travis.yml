@@ -22,3 +22,6 @@ install:
   - bundle install --retry=3
 notifications:
   slack: titreno:Twc0WXpO0ZuXsUmEWzJN8HPE
+addons:
+  code_climate:
+    repo_token: a2b972cba6c87f3fda0cd749cc47983238865acc3273490ed8acaedb7fa7814d
