@@ -1,15 +1,9 @@
-= RailsPdate
+= RailsPdate {<img src="https://codeclimate.com/github/mohsen-alizadeh/rails-pdate/badges/gpa.svg" />}[https://codeclimate.com/github/mohsen-alizadeh/rails-pdate] {<img src="https://travis-ci.org/mohsen-alizadeh/rails-pdate.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/mohsen-alizadeh/rails-pdate] {<img src="https://codeclimate.com/github/mohsen-alizadeh/rails-pdate/badges/coverage.svg" />}[https://codeclimate.com/github/mohsen-alizadeh/rails-pdate/coverage] {<img src="https://codeclimate.com/github/mohsen-alizadeh/rails-pdate/badges/issue_count.svg" />}[https://codeclimate.com/github/mohsen-alizadeh/rails-pdate] {<img src="https://badge.fury.io/rb/rails_pdate.svg" alt="Gem Version" />}[https://badge.fury.io/rb/rails_pdate]
 
 rails_pdate  is very simple and easy gem library that can used in rails application.
 
 rails_pdate gem has written in rails 4.0.0 but maybe work in previous versions of rails
 
-== badges
-
-{<img src="https://codeclimate.com/github/mohsen-alizadeh/rails-pdate/badges/gpa.svg" />}[https://codeclimate.com/github/mohsen-alizadeh/rails-pdate]
-{<img src="https://travis-ci.org/mohsen-alizadeh/rails-pdate.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/mohsen-alizadeh/rails-pdate]
-{<img src="https://codeclimate.com/github/mohsen-alizadeh/rails-pdate/badges/coverage.svg" />}[https://codeclimate.com/github/mohsen-alizadeh/rails-pdate/coverage]
-{<img src="https://codeclimate.com/github/mohsen-alizadeh/rails-pdate/badges/issue_count.svg" />}[https://codeclimate.com/github/mohsen-alizadeh/rails-pdate]
 
 == install
 * put rails_pdate in Gemfile like this
